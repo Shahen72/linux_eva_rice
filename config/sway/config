@@ -81,6 +81,7 @@ output * bg ~/Pictures/Wallpapers/wallhaven-7286p3_1920x1080.png fill
     # Start your launcher
     bindsym $mod+d exec $app_launcher
 
+    bindsym Print exec grim -g "$(slurp)" | wl-copy
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
     # Despite the name, also works for non-floating windows.
@@ -250,4 +251,3 @@ bar {
 }
 
 include /etc/sway/config.d/*
-
